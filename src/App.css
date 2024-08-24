@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'Luminari';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Luminari'), url('Luminari-Regular.woff') format('woff');
+  }
+
+main { 
+height: 100vh;
+ font-family: 'MS Sans Serif';
+ letter-spacing: 0.001em;
+ font-size: 14px;
+}
+
+.container {
+margin-top: 40px;
+padding: 30px;
+}
+
+strong {
+ font-weight: bold;
+}
+#desktop {
+overflow: auto;
+}
+
+p {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+color: white;
+font-size: 1.2vw;
+}
+
+a {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+color: white;
+}
+
+
+h1 {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+color: white;
+font-size: 2vw;
+}
+
+h3 {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+color: white;
+}
+
+h4 {
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+color: white;
+}
+
+/* COLUMNS */
+/* Create three unequal columns that floats next to each other */
+.column {
+float: left;
+padding: 10px;
+box-sizing: border-box;
+overflow: hidden;
+
+}
+.left {
+width: 88%;
+padding-top: 40px;
+}
+.right {
+width: 8%;
+}
+
+.headertext {
+margin: 0;
+font-size: 8vw;
+font-weight: bold;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+-webkit-text-stroke: 1px white;
+padding-top: 5px;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.rarible-box {
+margin: 15px;
+width: 200px;
+border-radius: 20px;
+color: #fff;
+text-align: center;
+font-size: 1vw;
+box-shadow: 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #483D8B;
+}
+
+.rarible-box a {
+text-decoration: none;
+color: white;
+font-size: 1vm;
+}
+
+input {
+background: rgba(255, 255, 255, 0.5);
+color: #483D8B;
+border: 1px solid white;
+font-size: 20px;
+margin: 10px;
+padding: 10px;
+text-align: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+.mintbutton {
+font-family: Luminari;
+margin: 15px;
+font-size: 18px;
+position: relative;
+outline: none;
+border: none;
+-webkit-appearance: none;
+-webkit-tap-highlight-color: transparent;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+padding: 0.75em 1.75em;
+border-radius: 30px;
+display: inline-block;
+color: #fff;
+background: -webkit-gradient(linear, left top, right top, from #7f00ff, to #e100ff);
+background: linear-gradient(to right, #CF77F3, #483D8B);
+box-shadow: 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #483D8B;
+}
+
+.footer-container {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 30px;
+}
+
+
+.footer-text {
+color: white;
+font-size: 16px;
+font-weight: bold;
+}
+
+
+.lefties {
+margin: 100px auto;
+position: relative;
+padding: 10px 5px;
+background: hsla(0, 0%, 100%, .3);
+font-size: 20px;
+line-height: 1.5;
+border-radius: 10px;
+width: 60%;
+box-shadow: 20px 5px 40px #cf77f3, 0px 5px 40px #009BFF, -20px 5px 40px #483D8B;
+overflow: hidden;
+}
+
+.lefties::before {
+content: '';
+margin: -35px;
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+filter: blur(20px);
+z-index: -1;
+}
+
+.counter{
+position: relative;
+outline: none;
+border: none;
+-webkit-appearance: none;
+-webkit-tap-highlight-color: transparent;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+padding: 0.75em 1.75em;
+border-radius: 30px;
+display: inline-block;
+border-radius: 20px;
+color: #fff;
+text-align: center;
+box-shadow: 20px 5px 40px #CF77F3, 0px 5px 40px #009BFF, -20px 5px 40px #483D8B;
+}
+
+.glowtext{
+color:white;
+text-align:center;
+align-items:center;
+justify-content:center;
+font-family:arial;
+text-transform:uppercase;
+position:static;
+font-size:3vw;
+text-shadow:0px 0px  10px cyan,
+  0px 0px  40px cyan,
+0px 0px  80px purple,
+0px 0px  120px cyan,
+0px 0px  200px cyan;
+}
+
+.openlink {
+color: yellow;
+font-size: 20px;
+}
+
+
+/* For iphone*/
+     @media screen and (max-width: 1170px) and (-webkit-min-device-pixel-ratio: 1) {
+      .headertext { 
+          font-size: 5rem;
+          padding-top: 0px;
+      }
+
+      h1 {
+          font-size:2rem;
+      }
+
+      p {
+          font-size:1rem;
+      }
+
+      .rarible-box {
+        font-size: 1rem;
+        width: 30%;
+        }
+
+       .container {
+         padding: 0px!important;
+         margin: 10px;
+       }
+
+       .acctbox {
+         display: none;
+       }
+
+       .input {
+        margin: 0px;
+  }
+}
